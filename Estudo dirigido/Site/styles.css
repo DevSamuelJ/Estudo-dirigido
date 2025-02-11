@@ -1,0 +1,193 @@
+/* Variáveis de cores */
+:root {
+    --vermelho: #e63946;
+    --roxo: #8338ec;
+    --cinza: #3a3a3a;
+    --background: #121212;
+    --text: #f8f9fa;
+  }
+  
+  /* Reset e Configurações Globais */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(135deg, var(--vermelho), var(--roxo));
+    padding: 20px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  header input {
+    width: 80%;
+    max-width: 500px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+  }
+  
+  /* Navegação */
+  nav {
+    background: var(--cinza);
+    text-align: center;
+    padding: 10px 0;
+  }
+  nav ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+  }
+  nav ul li a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background 0.3s;
+  }
+  nav ul li a:hover {
+    background: var(--vermelho);
+  }
+  
+  /* Main */
+  main {
+    padding: 40px 20px;
+  }
+  
+  /* Estrutura das seções */
+  section {
+    position: relative;
+    margin-bottom: 60px;
+    padding: 20px 0;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .section-header h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Conteúdo das seções */
+  .section-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  article {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: var(--roxo);
+  }
+  article p {
+    font-size: 1rem;
+  }
+  
+  /* Figures e Imagens Criativas */
+  
+  /* Engenharia de Software: imagem vertical */
+  .figure-engenharia {
+    margin-left: 20px;
+  }
+  .figure-engenharia img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    opacity: 0.85;
+  }
+  
+  /* Arquitetura de Software: imagem horizontal de fundo (posição atrás do título) */
+  .figure-arquitetura {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 100%;
+    max-width: 1000px;
+  }
+  .figure-arquitetura img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    border-radius: 10px;
+  }
+  
+  /* Web Design: banner horizontal */
+  .figure-webdesign {
+    margin-top: 20px;
+  }
+  .figure-webdesign img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    opacity: 0.85;
+  }
+  
+  /* Footer */
+  footer {
+    background: var(--cinza);
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  footer .footer-content p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  footer .footer-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  footer .footer-content ul li {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .section-header {
+      flex-direction: column;
+    }
+    .figure-arquitetura {
+      position: static;
+      transform: none;
+      margin-bottom: 10px;
+    }
+    .figure-engenharia {
+      margin-left: 0;
+    }
+  }
+  

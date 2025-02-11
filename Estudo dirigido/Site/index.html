@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Wiki de Tecnologia</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function searchWiki() {
+      const input = document.getElementById('search').value.toLowerCase();
+      const articles = document.querySelectorAll('article');
+      articles.forEach(article => {
+        const text = article.innerText.toLowerCase();
+        article.style.display = text.includes(input) ? "block" : "none";
+      });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Mini Wiki de Tecnologia</h1>
+    <input type="text" id="search" placeholder="Pesquisar..." onkeyup="searchWiki()">
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#engenharia">Engenharia de Software 🚀</a></li>
+      <li><a href="#arquitetura">Arquitetura de Software 🏛️</a></li>
+      <li><a href="#webdesign">Web Design 🎨</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <!-- Seção: Engenharia de Software -->
+    <section id="engenharia" class="section-engenharia">
+      <div class="section-header">
+        <h2>Engenharia de Software 🚀</h2>
+        <!-- Imagem vertical criativa -->
+        <figure class="figure-engenharia">
+          <img src="https://via.placeholder.com/180x600.png?text=Engenharia+Vertical" alt="Engenharia de Software">
+        </figure>
+      </div>
+      <div class="section-content">
+        <article>
+          <h3>Ciclo de Vida do Software</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel urna at elit consequat.</p>
+        </article>
+        <article>
+          <h3>Modelos de Desenvolvimento</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Padrões de Projeto</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Testes de Software</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Arquitetura de Software</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Gerenciamento de Projetos</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Manutenção de Software</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Gerência de Configuração</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Requisitos de Software</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+      </div>
+    </section>
+    
+    <!-- Seção: Arquitetura de Software -->
+    <section id="arquitetura" class="section-arquitetura">
+      <div class="section-header">
+        <!-- O título sobrepõe um background criativo -->
+        <h2>Arquitetura de Software 🏛️</h2>
+        <figure class="figure-arquitetura">
+          <img src="https://via.placeholder.com/1000x200.png?text=Arquitetura+Horizontal" alt="Arquitetura de Software">
+        </figure>
+      </div>
+      <div class="section-content">
+        <article>
+          <h3>Componentes e Conectores</h3>
+          <p>A arquitetura de software é formada por componentes (módulos, serviços, classes) e conectores (interfaces, APIs, protocolos de comunicação) que definem como os elementos interagem. A Arquitetura Client-Server é um exemplo clássico onde os componentes principais são Cliente (interface do usuário) e Servidor (banco de dados e lógica de negócios), conectados por protocolos como HTTP.</p>
+        </article>
+        <article>
+          <h3>Estilos Arquiteturais</h3>
+          <strong>Os estilos arquiteturais definem a estrutura geral de um sistema. Alguns dos principais estilos incluem:</strong>
+            
+        <ul>
+            <br><li>Arquitetura em Camadas (Layers): Organiza o sistema em camadas hierárquicas, como apresentação, negócios e dados.</li><br>
+            
+            <li>Arquitetura Hexagonal (Ports and Adapters): Separa a lógica de negócios das implementações externas, tornando o sistema mais modular e flexível.</li><br>
+            
+            <li>Arquitetura Pipes and Filters: Processa dados de forma sequencial por meio de módulos independentes chamados filtros.</li><br>
+            
+            <li>Arquitetura Orientada a Serviços (SOA): Estrutura o sistema em serviços independentes, que se comunicam por meio de interfaces bem definidas.</li><br>
+            
+            <li>Arquitetura Baseada em Microsserviços: Divide o sistema em pequenos serviços independentes, cada um com sua responsabilidade.</li>
+        </ul>
+        </article>
+        <article>
+          <h3>Padrões de Arquitetura</h3>
+        <ul>
+            <strong><p>Os padrões arquiteturais são soluções comprovadas para problemas recorrentes. Exemplos incluem:</p><br></strong>
+            
+            <li>MVC (Model-View-Controller): Separa a interface do usuário da lógica de negócios e dos dados.</li><br>
+            
+            <li>Camadas (Layers): Estrutura o sistema em diferentes níveis de responsabilidade.</li><br>
+            
+            <li>Hexagonal (Ports and Adapters): Mantém a lógica de negócios independente de implementações externas.</li><br>
+            
+            <li>Pipes and Filters: Processa fluxos de dados através de diferentes estágios de transformação.</li><br>
+        </ul>   
+            
+        </article>
+        <article>
+          <h3>Documentação Arquitetural</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Qualidades Arquiteturais</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Design para Escalabilidade</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Tecnologias e Ferramentas</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Requisitos de Software</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Arquitetura Baseada em Nuvem</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Arquitetura de Dados</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+      </div>
+    </section>
+    
+    <!-- Seção: Web Design -->
+    <section id="webdesign" class="section-webdesign">
+      <div class="section-header">
+        <h2>Web Design 🎨</h2>
+      </div>
+      <div class="section-content">
+        <article>
+          <h3>Usabilidade</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>UI-UX e Mobile First</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Design Responsivo</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Acessibilidade WEB e SEO</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Design de Interação, Visual e Identidade de Marca</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Design de Interação</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Design de Conteúdo</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Prototipagem e Wireframing</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Performance e Velocidade</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+          <h3>Deploy no Front</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+      </div>
+      <!-- Banner horizontal criativo no rodapé da seção -->
+      <figure class="figure-webdesign">
+        <img src="https://via.placeholder.com/1000x180.png?text=Web+Design+Banner" alt="Banner Web Design">
+      </figure>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="footer-content">
+      <p>Créditos e Fontes:</p>
+      <ul>
+        <li>Pesquisa: João Silva</li>
+        <li>Apoio: Maria Oliveira</li>
+        <li>Referências: alura.com.br, outroexemplo.com</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
